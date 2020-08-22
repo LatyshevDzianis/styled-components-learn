@@ -1,18 +1,19 @@
 import React from "react";
+import { ErrorMessage, Field } from "formik";
 
 const DebitCardSelect = () => {
   return (
     <div>
       <p>
-        <input type="radio" name="debit" />
+        <Field name="debit" type="radio" value="visa" />
         Visa
       </p>
       <p>
-        <input type="radio" name="debit" />
+        <Field name="debit" type="radio" value="masterCard" />
         MasterCard
       </p>
       <p>
-        <input type="radio" name="debit" />
+        <Field name="debit" type="radio" value="paypal" />
         Paypal
       </p>
     </div>

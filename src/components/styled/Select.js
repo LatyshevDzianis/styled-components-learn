@@ -1,15 +1,14 @@
 import styled from "styled-components";
 import { textColor } from "../../theme/theme";
 
-const TextInput = styled.input`
+const Select = styled.select`
   border: none;
-  background: transparent;
   border-bottom: 1px solid ${textColor};
   padding: 10px 0;
   margin-left: 10px;
   margin-bottom: 10px;
+  background: transparent;
   width: ${(props) => props.customWidth};
-  color: ${textColor};
 
   :active,
   :focus {
@@ -17,4 +16,4 @@ const TextInput = styled.input`
   }
 `;
 
-export default TextInput;
+export default Select;
