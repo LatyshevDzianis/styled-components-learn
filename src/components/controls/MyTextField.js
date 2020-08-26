@@ -1,8 +1,8 @@
 import React from "react";
 import { useField } from "formik";
-import TextInput from "./styled/TextInput";
-import StyledError from "./styled/StyledError";
-import FieldsWrapper from "./styled/FieldsWrapper";
+import TextInput from "../styled/TextInput";
+import StyledError from "../styled/StyledError";
+import FieldsWrapper from "../wrappers/FieldsWrapper";
 
 const MyTextField = ({ customWidth, ...props }) => {
   const [field, meta] = useField(props);

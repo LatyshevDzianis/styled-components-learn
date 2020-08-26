@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { backgroundColor } from "../../theme/theme";
 
-const CheckoutForm = styled.div`
+const CheckoutCard = styled.div`
   margin: 20px;
   width: 700px;
   background-color: ${backgroundColor};
@@ -10,4 +10,4 @@ const CheckoutForm = styled.div`
   padding: 10px 20px;
 `;
 
-export default CheckoutForm;
+export default CheckoutCard;

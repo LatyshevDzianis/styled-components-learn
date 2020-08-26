@@ -1,9 +1,9 @@
 import React from "react";
 import { useField } from "formik";
 
-import FieldsWrapper from "./styled/FieldsWrapper";
-import Select from "./styled/Select";
-import StyledError from "./styled/StyledError";
+import FieldsWrapper from "../wrappers/FieldsWrapper";
+import Select from "../styled/Select";
+import StyledError from "../styled/StyledError";
 
 const MySelect = ({ customWidth, ...props }) => {
   const [field, meta] = useField(props);

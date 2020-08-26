@@ -1,7 +1,7 @@
 import React from "react";
 import { useField } from "formik";
 
-import StyledLabel from "./styled/StyledLabel";
+import StyledLabel from "../styled/StyledLabel";
 
 const MyRadio = ({ label, ...props }) => {
   const [field] = useField(props);
