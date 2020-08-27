@@ -8,16 +8,8 @@ const MyTextField = ({ customWidth, ...props }) => {
   const [field, meta] = useField(props);
 
   return (
-    <FieldsWrapper
-      gridArea={props.gridArea && props.gridArea}
-      customWidth={customWidth}
-    >
-      <TextInput
-        error={meta.error}
-        customWidth={customWidth}
-        {...field}
-        {...props}
-      />
+    <FieldsWrapper gridArea={props.gridArea && props.gridArea}>
+      <TextInput error={meta.error} {...field} {...props} />
       <br />
       {meta.touched && meta.error && <StyledError>{meta.error}</StyledError>}
     </FieldsWrapper>

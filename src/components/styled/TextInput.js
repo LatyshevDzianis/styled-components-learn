@@ -6,9 +6,8 @@ const TextInput = styled.input`
   background: transparent;
   border-bottom: 1px solid ${textColor};
   padding: 10px 0;
-  margin-left: 10px;
   margin-bottom: 10px;
-  width: ${(props) => props.customWidth};
+  width: 100%;
   color: ${textColor};
 
   :active,

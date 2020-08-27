@@ -9,6 +9,21 @@ import CardDetailsInfoWrapper from "../wrappers/CardDetailsInfoWrapper";
 import MyTextField from "../controls/MyTextField";
 import MySelect from "../controls/MySelect";
 
+const months = [
+  "January",
+  "February",
+  "March",
+  "April",
+  "May",
+  "June",
+  "July",
+  "August",
+  "September",
+  "October",
+  "November",
+  "December",
+];
+
 const CardInfo = () => {
   return (
     <>
@@ -25,41 +40,26 @@ const CardInfo = () => {
           <MyTextField
             name="nameOnCard"
             placeholder="Name on card"
-            customWidth="99%"
             gridArea="a"
           />
           <MyTextField
             name="cardNumber"
             placeholder="Card number"
-            customWidth="99%"
             gridArea="b"
           />
-          <MyTextField
-            name="cvv2"
-            placeholder="CVV2"
-            customWidth="97%"
-            gridArea="c"
-          />
-          <MySelect name="expirationMonth" customWidth="99%" grid-area="d">
+          <MyTextField name="cvv2" placeholder="CVV2" gridArea="c" />
+          <MySelect name="expirationMonth" grid-area="d">
             <option value="">Card exp. month...</option>
-            <option value="January">January</option>
-            <option value="February">February</option>
-            <option value="March">March</option>
-            <option value="April">April</option>
-            <option value="May">May</option>
-            <option value="June">June</option>
-            <option value="July">July</option>
-            <option value="August">August</option>
-            <option value="September">September</option>
-            <option value="October">October</option>
-            <option value="November">November</option>
-            <option value="December">December</option>
+            {months.map((month, index) => (
+              <option key={index} value={month}>
+                {month}
+              </option>
+            ))}
           </MySelect>
           <MyTextField
             name="expirationYear"
             type="number"
             placeholder="Year"
-            customWidth="97%"
             gridArea="e"
           />
         </CardDetailsInfoWrapper>

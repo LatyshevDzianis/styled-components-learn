@@ -26,59 +26,30 @@ const UserInfo = ({ handleChangeTheme }) => {
       <InfoWrapper>
         <IconsWrapper>
           <AccountBoxIcon />
-          <MyTextField
-            name="firstName"
-            placeholder="First name"
-            customWidth="97%"
-          />
+          <MyTextField name="firstName" placeholder="First name" />
         </IconsWrapper>
         <IconsWrapper>
           <AccountBoxIcon />
-          <MyTextField
-            name="lastName"
-            placeholder="Last name"
-            customWidth="97%"
-          />
+          <MyTextField name="lastName" placeholder="Last name" />
         </IconsWrapper>
         <IconsWrapper>
           <MailIcon />
-          <MyTextField name="email" placeholder="Email" customWidth="97%" />
+          <MyTextField name="email" placeholder="Email" />
         </IconsWrapper>
         <IconsWrapper>
           <PhoneIcon />
-          <MyTextField name="phone" placeholder="Phone" customWidth="97%" />
+          <MyTextField name="phone" placeholder="Phone" />
         </IconsWrapper>
       </InfoWrapper>
 
       <MiddleWrapper>
-        <MyTextField
-          name="country"
-          placeholder="Country"
-          customWidth="98%"
-          gridArea="a"
-        />
-        <MyTextField
-          name="city"
-          placeholder="City"
-          customWidth="98%"
-          gridArea="b"
-        />
-        <MyTextField
-          name="postCode"
-          placeholder="Post code"
-          customWidth="98%"
-          gridArea="c"
-        />
-        <MyTextField
-          name="address"
-          placeholder="Address"
-          customWidth="99.5%"
-          gridArea="d"
-        />
+        <MyTextField name="country" placeholder="Country" gridArea="a" />
+        <MyTextField name="city" placeholder="City" gridArea="b" />
+        <MyTextField name="postCode" placeholder="Post code" gridArea="c" />
+        <MyTextField name="address" placeholder="Address" gridArea="d" />
         <MyTextField
           name="additionalInfo"
           placeholder="Additional info"
-          customWidth="99.5%"
           gridArea="e"
         />
       </MiddleWrapper>
