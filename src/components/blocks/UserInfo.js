@@ -10,6 +10,17 @@ import InfoWrapper from "../wrappers/InfoWrapper";
 import IconsWrapper from "../wrappers/IconsWrapper";
 import MyTextField from "../controls/MyTextField";
 import MiddleWrapper from "../wrappers/MiddleWrapper";
+import {
+  FIRST_NAME,
+  LAST_NAME,
+  EMAIL,
+  PHONE,
+  COUNTRY,
+  CITY,
+  POST_CODE,
+  ADDRESS,
+  ADDITIONAL_INFO,
+} from "../../constants/fields";
 
 const UserInfo = ({ handleChangeTheme }) => {
   return (
@@ -26,29 +37,29 @@ const UserInfo = ({ handleChangeTheme }) => {
       <InfoWrapper>
         <IconsWrapper>
           <AccountBoxIcon />
-          <MyTextField name="firstName" placeholder="First name" />
+          <MyTextField name={FIRST_NAME} placeholder="First name" />
         </IconsWrapper>
         <IconsWrapper>
           <AccountBoxIcon />
-          <MyTextField name="lastName" placeholder="Last name" />
+          <MyTextField name={LAST_NAME} placeholder="Last name" />
         </IconsWrapper>
         <IconsWrapper>
           <MailIcon />
-          <MyTextField name="email" placeholder="Email" />
+          <MyTextField name={EMAIL} placeholder="Email" />
         </IconsWrapper>
         <IconsWrapper>
           <PhoneIcon />
-          <MyTextField name="phone" placeholder="Phone" />
+          <MyTextField name={PHONE} placeholder="Phone" />
         </IconsWrapper>
       </InfoWrapper>
 
       <MiddleWrapper>
-        <MyTextField name="country" placeholder="Country" gridArea="a" />
-        <MyTextField name="city" placeholder="City" gridArea="b" />
-        <MyTextField name="postCode" placeholder="Post code" gridArea="c" />
-        <MyTextField name="address" placeholder="Address" gridArea="d" />
+        <MyTextField name={COUNTRY} placeholder="Country" gridArea="a" />
+        <MyTextField name={CITY} placeholder="City" gridArea="b" />
+        <MyTextField name={POST_CODE} placeholder="Post code" gridArea="c" />
+        <MyTextField name={ADDRESS} placeholder="Address" gridArea="d" />
         <MyTextField
-          name="additionalInfo"
+          name={ADDITIONAL_INFO}
           placeholder="Additional info"
           gridArea="e"
         />

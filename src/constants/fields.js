@@ -1,0 +1,15 @@
+export const FIRST_NAME = "firstName";
+export const LAST_NAME = "lastName";
+export const EMAIL = "email";
+export const PHONE = "phone";
+export const COUNTRY = "country";
+export const CITY = "city";
+export const POST_CODE = "postCode";
+export const ADDRESS = "address";
+export const ADDITIONAL_INFO = "additionalInfo";
+export const DEBIT_CARD = "debitCard";
+export const NAME_ON_CARD = "nameOnCard";
+export const CARD_NUMBER = "cardNumber";
+export const CVV2 = "cvv2";
+export const EXPIRATION_MONTH = "expirationMonth";
+export const EXPIRATION_YEAR = "expirationYear";
