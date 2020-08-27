@@ -1,6 +1,6 @@
 import React from "react";
 
-import MyRadio from "../controls/MyRadio";
+import MyRadio from "../controls/RadioField";
 import { ErrorMessage } from "formik";
 import StyledError from "../styled/StyledError";
 import { DEBIT_CARD } from "../../constants/fields";

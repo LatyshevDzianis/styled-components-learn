@@ -3,8 +3,8 @@ import React from "react";
 import CardDetailsTitle from "../styled/CardDetailsTitle";
 import CardDetailsWrapper from "../wrappers/CardDetailsWrapper";
 import CardDetailsInfoWrapper from "../wrappers/CardDetailsInfoWrapper";
-import MyTextField from "../controls/MyTextField";
-import MySelect from "../controls/MySelect";
+import MyTextField from "../controls/TextField";
+import MySelect from "../controls/SelectField";
 import RadioGroup from "./RadioGroup";
 import {
   NAME_ON_CARD,

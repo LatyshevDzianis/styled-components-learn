@@ -5,10 +5,10 @@ import PhoneIcon from "@material-ui/icons/Phone";
 
 import ChangeThemeWrapper from "../wrappers/ChangeThemeWrapper";
 import CheckoutFormTitle from "../styled/CheckoutFormTitle";
-import MyCheckBox from "../controls/MyCheckBox";
+import MyCheckBox from "../controls/CheckBoxField";
 import InfoWrapper from "../wrappers/InfoWrapper";
 import IconsWrapper from "../wrappers/IconsWrapper";
-import MyTextField from "../controls/MyTextField";
+import MyTextField from "../controls/TextField";
 import MiddleWrapper from "../wrappers/MiddleWrapper";
 import {
   FIRST_NAME,
