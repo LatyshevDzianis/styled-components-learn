@@ -9,7 +9,7 @@ const MySelect = ({ ...props }) => {
   const [field, meta] = useField(props);
 
   return (
-    <FieldsWrapper gridArea={props.gridArea && props.gridArea}>
+    <FieldsWrapper gridArea={props.gridArea}>
       <Select {...field} {...props} />
       <br />
       {meta.touched && meta.error && <StyledError>{meta.error}</StyledError>}
